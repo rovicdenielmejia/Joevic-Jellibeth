@@ -1,7 +1,7 @@
 import { QRCodeSVG } from 'qrcode.react'
 
 const PrintQR = () => {
-  const baseUrl = typeof window !== 'undefined' ? window.location.origin : 'https://example.com'
+  const baseUrl = 'https://j-and-a-wedding.vercel.app'
 
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center p-8">
