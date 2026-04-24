@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect, useRef } from 'react'
 import { Routes, Route, useSearchParams, useParams, useNavigate } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import SearchBar from './components/SearchBar'
@@ -191,13 +192,16 @@ function HomePage() {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/seat-finder" element={<HomePage />} />
-      <Route path="/seat-finder/*" element={<HomePage />} />
-      <Route path="/table/:tableName" element={<TableDetail />} />
-      <Route path="/print-qr" element={<PrintQR />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/seat-finder" element={<HomePage />} />
+        <Route path="/seat-finder/*" element={<HomePage />} />
+        <Route path="/table/:tableName" element={<TableDetail />} />
+        <Route path="/print-qr" element={<PrintQR />} />
+      </Routes>
+      <Analytics />
+    </>
   )
 }
 
