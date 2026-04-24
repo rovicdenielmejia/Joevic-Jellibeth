@@ -57,7 +57,7 @@ const TableDetail = () => {
         {/* Table Header - Invitation Style */}
         <div className="bg-cream-50 rounded-2xl p-6 border border-border shadow-soft text-center">
           <p className="text-secondary text-xs uppercase tracking-wider mb-2">Table</p>
-          <h2 className="font-serif text-5xl font-medium text-primary">
+          <h2 className="font-serif text-6xl md:text-7xl font-medium text-primary">
             {getSimpleTableName()}
           </h2>
           <p className="text-secondary text-sm mt-2">
