@@ -2,6 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { guests } from '../data/guests'
 import { tableArrangementImage } from '../constants/assets'
+import Lightbox from './Lightbox'
 
 const TableDetail = () => {
   const { tableName } = useParams()
@@ -78,30 +79,13 @@ const TableDetail = () => {
         </div>
 
         {/* Lightbox */}
-        <div 
-          className={`fixed inset-0 z-50 bg-black/80 flex items-center justify-center ${lightboxOpen ? 'block' : 'hidden'}`}
-          onClick={() => setLightboxOpen(false)}
-        >
-          <div 
-            className="relative w-full h-full overflow-auto p-4"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button 
-              onClick={() => setLightboxOpen(false)}
-              className="fixed top-4 right-4 z-50 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center shadow-lg"
-            >
-              <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-            <img 
-              src={tableArrangementImage}
-              alt="Table Seating Arrangement" 
-              className="w-full h-auto min-w-full min-h-full"
-              style={{ maxWidth: 'none' }}
-            />
-          </div>
-        </div>
+        <Lightbox isOpen={lightboxOpen} onClose={() => setLightboxOpen(false)}>
+          <img 
+            src={tableArrangementImage}
+            alt="Table Seating Arrangement" 
+            className="w-full h-auto rounded-lg"
+          />
+        </Lightbox>
 
         {/* Guest List at Table */}
         <div className="bg-cream-50 rounded-2xl overflow-hidden border border-border shadow-soft">
