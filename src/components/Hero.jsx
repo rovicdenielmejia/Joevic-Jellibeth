@@ -5,11 +5,7 @@ const Hero = () => {
         {/* Names */}
         <div className="space-y-1">
           <h1 className="font-serif text-4xl md:text-5xl font-semibold text-gold-400 tracking-wide">
-            Jover
-          </h1>
-          <p className="text-gold-500 text-2xl">&</p>
-          <h1 className="font-serif text-4xl md:text-5xl font-semibold text-gold-400 tracking-wide">
-            Anjelica
+            Jover & Anjelica Wedding
           </h1>
         </div>
 
