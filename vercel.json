@@ -1,4 +1,7 @@
 {
+  "buildCommand": "node node_modules/vite/bin/vite.js build",
+  "installCommand": "npm install",
+  "framework": "vite",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
