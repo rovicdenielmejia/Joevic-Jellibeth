@@ -6,8 +6,8 @@ const TableList = () => {
 
   return (
     <section className="space-y-4">
-      <h2 className="font-serif text-2xl font-semibold text-gold-400">
-        Seating Arrangement
+      <h2 className="font-serif text-2xl font-medium text-primary">
+        Guest Seating List
       </h2>
       <div className="grid gap-4">
         {tables.map((table, index) => (

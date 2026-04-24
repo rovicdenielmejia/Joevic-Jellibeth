@@ -7,44 +7,62 @@ export default {
   theme: {
     extend: {
       colors: {
-        emerald: {
-          50: '#E8F5F0',
-          100: '#D1EBE1',
-          200: '#A3D7C3',
-          300: '#75C3A5',
-          400: '#47AF87',
-          500: '#199B69',
-          600: '#0B3D2E',
-          700: '#093126',
-          800: '#07251E',
-          900: '#051916',
+        cream: {
+          50: '#FFFDFB',
+          100: '#FDF6F7',
+          200: '#F8EFF3',
+          300: '#F2E6EB',
+        },
+        rose: {
+          50: '#FFF6F8',
+          100: '#FDECF2',
+          200: '#FADCE7',
+          300: '#F1BED2',
+          400: '#E7A8C3',
+          500: '#D289AC',
+        },
+        lilac: {
+          100: '#F4EEFF',
+          200: '#E7DBFF',
+          300: '#D8C6F8',
+          400: '#C4A9EB',
+        },
+        mint: {
+          100: '#ECFBF5',
+          200: '#D7F5EA',
+          300: '#BDEAD9',
+          400: '#9ED9C2',
+        },
+        butter: {
+          100: '#FFF8E8',
+          200: '#FDEFC8',
+          300: '#F5DFA4',
+        },
+        sage: {
+          300: '#BCD3B4',
+          400: '#9FBE97',
+        },
+        taupe: {
+          300: '#DCCFCE',
+          400: '#BEAEAD',
         },
         gold: {
-          50: '#FDF9EE',
-          100: '#FAF0D4',
-          200: '#F5E1A9',
-          300: '#F0D27E',
-          400: '#EBC353',
-          500: '#D4A45C',
-          600: '#C6A45C',
-          700: '#A88A4D',
-          800: '#8A703E',
-          900: '#6C562F',
+          400: '#D39D7A',
+          500: '#BC8360',
         },
-        ivory: {
-          50: '#FDFCF8',
-          100: '#F5F1E8',
-          200: '#EBE4D4',
-        }
+        blush: '#F1BED2',
+        warmGold: '#D39D7A',
+        primary: '#5B4A62',
+        secondary: '#8A768F',
+        border: '#EEDFE6',
       },
       fontFamily: {
-        serif: ['Playfair Display', 'Georgia', 'serif'],
-        sans: ['Poppins', 'system-ui', 'sans-serif'],
+        serif: ['Cormorant Garamond', 'Playfair Display', 'Georgia', 'serif'],
+        sans: ['DM Sans', 'Poppins', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        'soft': '0 4px 20px rgba(11, 61, 46, 0.08)',
-        'soft-lg': '0 8px 40px rgba(11, 61, 46, 0.12)',
-        'glow': '0 0 30px rgba(198, 164, 92, 0.3)',
+        'soft': '0 8px 20px rgba(145, 117, 157, 0.12)',
+        'soft-lg': '0 14px 32px rgba(145, 117, 157, 0.16)',
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-out',

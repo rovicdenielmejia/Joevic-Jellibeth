@@ -10,6 +10,7 @@ import Lightbox from './components/Lightbox'
 import Footer from './components/Footer'
 import PrintQR from './components/PrintQR'
 import { searchGuests } from './data/guests'
+import { tableArrangementImage } from './constants/assets'
 
 function HomePage() {
   const [searchParams, setSearchParams] = useSearchParams()
@@ -77,10 +78,10 @@ function HomePage() {
   }
 
   return (
-    <div className="min-h-screen bg-emerald-600 flex flex-col">
+    <div className="invite-floral-canvas min-h-screen bg-cream-50/65 flex flex-col">
       <Header />
       
-      <main className="flex-1 max-w-md mx-auto w-full px-4 space-y-6 pb-8">
+      <main className="flex-1 max-w-md mx-auto w-full px-4 space-y-8 pb-8">
         <Hero />
 
         {/* Search Section */}
@@ -101,33 +102,33 @@ function HomePage() {
             {showDropdown && searchResults.length > 0 && (
               <div 
                 ref={dropdownRef}
-                className="absolute z-50 w-full mt-2 bg-emerald-800 border border-gold-500/30 rounded-2xl shadow-xl overflow-hidden animate-fade-in-up"
+                className="absolute z-50 w-full mt-2 bg-cream-50 border border-border rounded-2xl shadow-soft-lg overflow-hidden animate-fade-in-up"
               >
                 <div className="max-h-72 overflow-y-auto">
                   {searchResults.map((guest, index) => (
                     <button
                       key={guest.id}
                       onClick={() => handleSelectGuest(guest)}
-                      className={`w-full px-4 py-3 text-left hover:bg-emerald-700/50 transition-colors flex items-center justify-between gap-3 ${
-                        index === selectedIndex ? 'bg-emerald-700/50' : ''
-                      } ${index > 0 ? 'border-t border-gold-500/10' : ''}`}
+                      className={`w-full px-4 py-3 text-left hover:bg-lilac-100/70 transition-colors flex items-center justify-between gap-3 ${
+                        index === selectedIndex ? 'bg-lilac-100/70' : ''
+                      } ${index > 0 ? 'border-t border-border' : ''}`}
                     >
                       <div className="flex-1 min-w-0">
-                        <p className="text-ivory-100 font-medium truncate">
+                        <p className="text-primary font-medium truncate">
                           {guest.name}
                         </p>
-                        <p className="text-gold-500/70 text-xs truncate">
+                        <p className="text-secondary text-xs truncate">
                           {guest.table}
                         </p>
                       </div>
-                      <svg className="w-4 h-4 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-4 h-4 text-warmGold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
                     </button>
                   ))}
                 </div>
-                <div className="px-4 py-2 bg-emerald-900/50 border-t border-gold-500/10">
-                  <p className="text-gold-500/50 text-xs text-center">
+                <div className="px-4 py-2 bg-rose-50 border-t border-border">
+                  <p className="text-secondary text-xs text-center">
                     {searchResults.length} {searchResults.length === 1 ? 'result' : 'results'} found
                   </p>
                 </div>
@@ -145,8 +146,8 @@ function HomePage() {
                   ))}
                 </div>
               ) : (
-                <div className="bg-emerald-800/50 rounded-2xl p-6 text-center border border-gold-500/20">
-                  <p className="text-gold-400">
+                <div className="bg-rose-50 rounded-2xl p-6 text-center border border-border shadow-soft">
+                  <p className="text-secondary">
                     No guest found. Please check the spelling or ask the registration team.
                   </p>
                 </div>
@@ -159,18 +160,18 @@ function HomePage() {
         {!searchQuery.trim() && (
           <>
             <div 
-              className="bg-emerald-800/50 rounded-2xl p-3 border border-gold-500/20 cursor-zoom-in hover:border-gold-500/50 transition-all"
+              className="bg-cream-50 rounded-2xl p-3 border border-border cursor-zoom-in hover:shadow-soft-lg transition-all"
               onClick={() => setLightboxOpen(true)}
             >
               <img 
-                src="/Table-Arrangement.png" 
+                src={tableArrangementImage}
                 alt="Table Seating Arrangement" 
-                className="w-full h-auto rounded-xl"
+                className="w-full h-auto rounded-lg"
               />
-              <p className="text-gold-500/50 text-xs text-center mt-2">Tap to zoom</p>
+              <p className="text-secondary text-xs text-center mt-2">Tap to zoom</p>
             </div>
-            <p className="text-gold-400 text-center font-serif text-xl">
-              "Thank you for sailing with us!"
+            <p className="text-secondary text-center italic font-serif text-lg px-4">
+              "Your presence is our gift"
             </p>
           </>
         )}
@@ -178,9 +179,9 @@ function HomePage() {
         {/* Lightbox */}
         <Lightbox isOpen={lightboxOpen} onClose={() => setLightboxOpen(false)}>
           <img 
-            src="/Table-Arrangement.png" 
+            src={tableArrangementImage}
             alt="Table Seating Arrangement" 
-            className="w-full h-auto rounded-xl"
+            className="w-full h-auto rounded-lg"
           />
         </Lightbox>
       </main>

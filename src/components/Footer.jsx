@@ -1,10 +1,12 @@
 const Footer = () => {
   return (
-    <footer className="border-t border-gold-500/20 mt-12 py-6">
-      <div className="max-w-md mx-auto px-4">
+    <footer className="border-t border-border/80 mt-8">
+      {/* Floral bottom strip */}
+      <div className="h-2 floral-strip"></div>
+      <div className="max-w-md mx-auto px-4 py-6">
         <div className="text-center">
-          <p className="text-gold-500/70 text-sm">
-            Powered by <span className="text-gold-400 font-serif">Venuelle</span>
+          <p className="text-secondary text-xs tracking-wide">
+            Powered by <span className="text-rose-400 font-serif">Venuelle</span>
           </p>
         </div>
       </div>
