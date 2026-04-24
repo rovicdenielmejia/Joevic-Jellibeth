@@ -4,7 +4,7 @@ const Header = () => {
       <div className="max-w-md mx-auto px-4 py-2.5 flex items-center justify-center">
         <div className="w-full flex items-center justify-center gap-2">
           <img
-            src="/dist/Logo.png"
+            src="/Logo.png"
             alt="Venuelle logo"
             className="w-7 h-7 rounded-md object-cover shadow-sm shrink-0"
           />
