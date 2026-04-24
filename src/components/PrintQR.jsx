@@ -8,7 +8,7 @@ const PrintQR = () => {
       <div className="text-center space-y-6 max-w-md">
         {/* Title */}
         <h1 className="font-serif text-4xl font-semibold text-emerald-700">
-          J&A Wedding
+          Jover & Anjelica Wedding
         </h1>
         <p className="text-xl text-emerald-600">
           Seat Finder

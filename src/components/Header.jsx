@@ -8,8 +8,8 @@ const Header = () => {
             alt="Venuelle Logo" 
             className="h-8 w-auto"
           />
-          <span className="font-serif text-lg font-semibold text-gold-400 tracking-wide">
-            Venuelle
+          <span className="font-serif text-sm md:text-base font-semibold text-gold-400 tracking-wide text-center">
+            Jover & Anjelica Wedding | Powered by Venuelle
           </span>
         </div>
       </div>
