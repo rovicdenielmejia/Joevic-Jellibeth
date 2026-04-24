@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import { Routes, Route, useSearchParams, useParams, useNavigate } from 'react-router-dom'
 import Header from './components/Header'
 import Hero from './components/Hero'
