@@ -1,3 +1,1 @@
-import tableArrangementImage from '../../Table arrangment.png'
-
-export { tableArrangementImage }
+export const tableArrangementImage = '/Table-Arrangement.jpg'

@@ -1,66 +1,60 @@
 const Hero = () => {
   return (
-    <section className="py-6 px-4 animate-fade-in">
-      <div className="text-center space-y-5">
-        {/* Top small text */}
-        <p className="text-secondary text-sm uppercase tracking-[0.2em] font-sans">
-          Together with their families
+    <section className="py-8 px-4 animate-fade-in">
+      <div className="space-y-6 text-center">
+        <p className="text-secondary text-[11px] uppercase tracking-[0.26em] font-sans">
+          Wedding Reception
         </p>
 
-        {/* Main names */}
-        <div className="space-y-1">
-          <h1 className="font-serif text-5xl md:text-6xl font-medium text-primary tracking-wide">
-            Sef & Nelle
+        <div className="space-y-2">
+          <h1 className="font-serif text-[52px] md:text-7xl font-medium text-primary tracking-[0.08em] leading-[0.9]">
+            JOEVIC
           </h1>
-          <p className="font-serif text-2xl text-secondary italic">
-            Wedding Reception
+          <p className="font-script text-secondary text-5xl leading-none">
+            and
+          </p>
+          <h1 className="font-serif text-[52px] md:text-7xl font-medium text-primary tracking-[0.08em] leading-[0.9]">
+            JELLIBETH
+          </h1>
+          <p className="font-serif text-secondary italic text-lg pt-1">
+            "Celebrate love with us"
           </p>
         </div>
 
-        {/* Elegant Divider */}
-        <div className="flex items-center justify-center gap-3 py-2">
-          <div className="w-8 h-px bg-taupe-300"></div>
-          <svg className="w-4 h-4 text-rose-300" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-          </svg>
-          <div className="w-8 h-px bg-taupe-300"></div>
+        <div className="flex items-center gap-4 py-1">
+          <div className="h-px flex-1 bg-border"></div>
+          <span className="font-serif text-secondary text-sm tracking-[0.18em] uppercase">May 16, 2026</span>
+          <div className="h-px flex-1 bg-border"></div>
         </div>
 
-        {/* Event Details Card */}
-        <div className="bg-white rounded-xl p-5 border border-border space-y-4 shadow-soft">
-          {/* Date & Time */}
-          <div className="flex items-center justify-center gap-6 text-sm">
-            <div className="text-center">
-              <p className="text-secondary text-xs uppercase tracking-wider mb-1">Date</p>
-              <p className="text-primary font-medium">Saturday</p>
-              <p className="text-primary">25th of April 2026</p>
+        <div className="bg-cream-50 rounded-2xl p-6 border border-border/90 space-y-5 shadow-soft text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+            <div className="space-y-1">
+              <p className="text-secondary text-[10px] uppercase tracking-[0.18em]">Date and Time</p>
+              <p className="text-primary font-medium">Saturday, May 16, 2026</p>
+              <p className="text-secondary">at 12:30 PM</p>
             </div>
-            <div className="w-px h-12 bg-border"></div>
-            <div className="text-center">
-              <p className="text-secondary text-xs uppercase tracking-wider mb-1">Time</p>
-              <p className="text-primary font-medium">Four o'clock</p>
-              <p className="text-primary">in the afternoon</p>
+            <div className="space-y-1">
+              <p className="text-secondary text-[10px] uppercase tracking-[0.18em]">Ceremony</p>
+              <p className="text-primary font-medium">Our Lady of the Pillar Parish Church</p>
+              <p className="text-secondary">Cauayan City, Isabela</p>
             </div>
           </div>
 
-          {/* Divider */}
-          <div className="flex items-center justify-center">
-            <div className="w-16 h-px bg-border"></div>
-          </div>
+          <div className="h-px bg-border"></div>
 
-          {/* Venue */}
-          <div>
-            <p className="text-secondary text-xs uppercase tracking-wider text-center mb-1">Venue</p>
-            <p className="text-primary text-center font-medium">Villa Evangeline</p>
-            <p className="text-secondary text-center text-sm">Patul, Santiago City, Isabela</p>
+          <div className="space-y-1">
+            <p className="text-secondary text-[10px] uppercase tracking-[0.18em]">Reception</p>
+            <p className="text-primary font-medium">Sally&apos;s Integrated Farm</p>
+            <p className="text-secondary">Brgy. Turod, Reina Mercedes, Isabela</p>
           </div>
         </div>
 
-        {/* Find Your Seat */}
-        <div className="pt-2">
-          <h2 className="font-serif text-xl font-medium text-primary">
-            Find Your Seat
+        <div className="pt-1 space-y-1">
+          <h2 className="font-serif text-2xl font-medium text-primary tracking-wide">
+            "Find your seat instantly"
           </h2>
+          <p className="text-secondary text-sm">Search your name below to view your table assignment.</p>
         </div>
       </div>
     </section>

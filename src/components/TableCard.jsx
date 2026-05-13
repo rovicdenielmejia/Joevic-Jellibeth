@@ -1,12 +1,12 @@
 const TableCard = ({ table }) => {
   return (
     <div className="bg-cream-50 rounded-2xl overflow-hidden border border-border shadow-soft">
-      <div className="px-4 py-3 bg-lilac-100/60 border-b border-border">
+      <div className="px-4 py-3 bg-cream-100 border-b border-border">
         <div className="flex items-center justify-between gap-2">
           <h4 className="font-serif text-base font-medium text-primary">
             {table.name}
           </h4>
-          <span className="text-xs font-medium text-secondary bg-rose-100 px-2 py-1 rounded-full">
+          <span className="text-xs font-medium text-secondary bg-cream-50 border border-border px-2 py-1 rounded-full">
             {table.guests.length}
           </span>
         </div>

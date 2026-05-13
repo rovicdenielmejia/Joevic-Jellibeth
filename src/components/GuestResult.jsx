@@ -18,7 +18,7 @@ const GuestResult = ({ guest }) => {
     <div className="bg-cream-50 rounded-2xl p-5 border border-border shadow-soft card-hover animate-fade-in-up">
       <div className="flex items-center justify-between gap-4">
         <div className="text-center min-w-[60px]">
-          <p className="text-secondary text-[10px] uppercase tracking-wider mb-1">Table</p>
+          <p className="text-secondary text-[10px] uppercase tracking-[0.16em] mb-1">Table</p>
           <h3 className="font-serif text-5xl font-medium text-primary leading-none">
             {getSimpleTableName(guest.table)}
           </h3>
@@ -27,7 +27,7 @@ const GuestResult = ({ guest }) => {
         <div className="w-px h-10 bg-border"></div>
 
         <div className="flex-1 text-center">
-          <p className="text-secondary text-[10px] uppercase tracking-wider mb-1">Name</p>
+          <p className="text-secondary text-[10px] uppercase tracking-[0.16em] mb-1">Name</p>
           <h4 className="font-serif text-lg font-medium text-primary">
             {guest.name}
           </h4>
@@ -36,7 +36,7 @@ const GuestResult = ({ guest }) => {
 
       <button
         onClick={handleViewTable}
-        className="w-full mt-4 py-3 px-4 bg-lilac-100/60 border border-lilac-200 hover:bg-lilac-200/70 text-primary font-medium text-sm rounded-xl transition-colors flex items-center justify-center gap-2"
+        className="w-full mt-4 py-3 px-4 bg-cream-100 border border-border hover:bg-cream-200 text-primary font-medium text-sm rounded-xl transition-colors flex items-center justify-center gap-2"
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />

@@ -1,16 +1,16 @@
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 bg-cream-50/85 backdrop-blur-sm border-b border-border">
-      <div className="max-w-md mx-auto px-4 py-2.5 flex items-center justify-center">
-        <div className="w-full flex items-center justify-center gap-2">
+    <header className="sticky top-0 z-50 bg-cream-50/92 backdrop-blur-sm border-b border-border/80">
+      <div className="max-w-md mx-auto px-4 py-4 text-center">
+        <div className="flex items-center justify-center gap-3 text-sm md:text-base text-primary tracking-[0.08em] uppercase font-medium">
           <img
             src="/Logo.png"
             alt="Venuelle logo"
-            className="w-7 h-7 rounded-md object-cover shadow-sm shrink-0"
+            className="w-10 h-10 rounded-md object-cover"
           />
-          <span className="block font-serif text-[10px] text-secondary text-center tracking-[0.06em] leading-tight whitespace-normal">
-            Seat Finder | Powered by Venuelle
-          </span>
+          <span>Seat Finder</span>
+          <span>|</span>
+          <span>Powered by Venuelle</span>
         </div>
       </div>
     </header>

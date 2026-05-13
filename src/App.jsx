@@ -86,7 +86,7 @@ function HomePage() {
 
         {/* Search Section */}
         <section className="space-y-4">
-          <div className="relative">
+          <div className="relative bg-cream-50 border border-border rounded-2xl p-4 shadow-soft">
             <SearchBar 
               value={searchQuery}
               onChange={(val) => {
@@ -102,15 +102,15 @@ function HomePage() {
             {showDropdown && searchResults.length > 0 && (
               <div 
                 ref={dropdownRef}
-                className="absolute z-50 w-full mt-2 bg-cream-50 border border-border rounded-2xl shadow-soft-lg overflow-hidden animate-fade-in-up"
+                className="absolute z-50 left-0 right-0 mx-4 mt-2 bg-cream-50 border border-border rounded-2xl shadow-soft-lg overflow-hidden animate-fade-in-up"
               >
                 <div className="max-h-72 overflow-y-auto">
                   {searchResults.map((guest, index) => (
                     <button
                       key={guest.id}
                       onClick={() => handleSelectGuest(guest)}
-                      className={`w-full px-4 py-3 text-left hover:bg-lilac-100/70 transition-colors flex items-center justify-between gap-3 ${
-                        index === selectedIndex ? 'bg-lilac-100/70' : ''
+                      className={`w-full px-4 py-3 text-left hover:bg-cream-100 transition-colors flex items-center justify-between gap-3 ${
+                        index === selectedIndex ? 'bg-cream-100' : ''
                       } ${index > 0 ? 'border-t border-border' : ''}`}
                     >
                       <div className="flex-1 min-w-0">
@@ -127,7 +127,7 @@ function HomePage() {
                     </button>
                   ))}
                 </div>
-                <div className="px-4 py-2 bg-rose-50 border-t border-border">
+                <div className="px-4 py-2 bg-cream-100 border-t border-border">
                   <p className="text-secondary text-xs text-center">
                     {searchResults.length} {searchResults.length === 1 ? 'result' : 'results'} found
                   </p>
@@ -146,7 +146,7 @@ function HomePage() {
                   ))}
                 </div>
               ) : (
-                <div className="bg-rose-50 rounded-2xl p-6 text-center border border-border shadow-soft">
+                <div className="bg-cream-100 rounded-2xl p-6 text-center border border-border shadow-soft">
                   <p className="text-secondary">
                     No guest found. Please check the spelling or ask the registration team.
                   </p>
@@ -171,7 +171,7 @@ function HomePage() {
               <p className="text-secondary text-xs text-center mt-2">Tap to zoom</p>
             </div>
             <p className="text-secondary text-center italic font-serif text-lg px-4">
-              "Your presence is our gift"
+              "Thank you for celebrating with us"
             </p>
           </>
         )}
