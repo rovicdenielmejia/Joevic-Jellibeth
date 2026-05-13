@@ -80,7 +80,6 @@ export const guests = [
   { id: 52, name: "CHERRY LAZARO", table: "Table SEVEN", category: "Regular", notes: "" },
   { id: 53, name: "ROSE BECK", table: "Table SEVEN", category: "Regular", notes: "" },
   { id: 54, name: "SB ALBINO CUNTAPAY", table: "Table SEVEN", category: "Regular", notes: "" },
-  { id: 55, name: "SB BOBOT BAUA", table: "Table SEVEN", category: "Regular", notes: "" },
   { id: 56, name: "SB TONY APOSTOL", table: "Table SEVEN", category: "Regular", notes: "" },
   { id: 57, name: "SB BANJO ADDUN", table: "Table SEVEN", category: "Regular", notes: "" },
   { id: 58, name: "CEASAR LAGUTAO", table: "Table SEVEN", category: "Regular", notes: "" },
