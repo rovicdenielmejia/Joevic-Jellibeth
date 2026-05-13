@@ -10,7 +10,14 @@ const Header = () => {
           />
           <span>Seat Finder</span>
           <span>|</span>
-          <span>Powered by Venuelle</span>
+          <a
+            href="https://venuelle.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Powered by Venuelle
+          </a>
         </div>
       </div>
     </header>
