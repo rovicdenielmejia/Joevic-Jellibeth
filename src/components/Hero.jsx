@@ -28,25 +28,23 @@ const Hero = () => {
         </div>
 
         <div className="bg-cream-50 rounded-2xl p-6 border border-border/90 space-y-5 shadow-soft text-left">
+          <div className="space-y-1 bg-mint-100/55 rounded-xl p-3 border border-border/60 text-sm text-center">
+            <p className="text-secondary text-[10px] uppercase tracking-[0.18em]">Date and Time</p>
+            <p className="text-primary font-medium">Saturday, May 16, 2026</p>
+            <p className="text-secondary">at 12:30 PM</p>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-            <div className="space-y-1 bg-mint-100/55 rounded-xl p-3 border border-border/60">
-              <p className="text-secondary text-[10px] uppercase tracking-[0.18em]">Date and Time</p>
-              <p className="text-primary font-medium">Saturday, May 16, 2026</p>
-              <p className="text-secondary">at 12:30 PM</p>
-            </div>
             <div className="space-y-1 bg-rose-50/70 rounded-xl p-3 border border-border/60">
               <p className="text-secondary text-[10px] uppercase tracking-[0.18em]">Ceremony</p>
               <p className="text-primary font-medium">Our Lady of the Pillar Parish Church</p>
               <p className="text-secondary">Cauayan City, Isabela</p>
             </div>
-          </div>
-
-          <div className="h-px bg-border"></div>
-
-          <div className="space-y-1 bg-mint-100/40 rounded-xl p-3 border border-border/60">
-            <p className="text-secondary text-[10px] uppercase tracking-[0.18em]">Reception</p>
-            <p className="text-primary font-medium">Sally&apos;s Integrated Farm</p>
-            <p className="text-secondary">Brgy. Turod, Reina Mercedes, Isabela</p>
+            <div className="space-y-1 bg-mint-100/40 rounded-xl p-3 border border-border/60">
+              <p className="text-secondary text-[10px] uppercase tracking-[0.18em]">Reception</p>
+              <p className="text-primary font-medium">Sally&apos;s Integrated Farm</p>
+              <p className="text-secondary">Brgy. Turod, Reina Mercedes, Isabela</p>
+            </div>
           </div>
         </div>
 
