@@ -87,6 +87,7 @@ function HomePage() {
         {/* Search Section */}
         <section className="space-y-4">
           <div className="relative bg-cream-50 border border-border rounded-2xl p-4 shadow-soft">
+            <p className="text-secondary text-[10px] uppercase tracking-[0.18em] mb-2 px-1">Guest Search</p>
             <SearchBar 
               value={searchQuery}
               onChange={(val) => {
@@ -109,8 +110,8 @@ function HomePage() {
                     <button
                       key={guest.id}
                       onClick={() => handleSelectGuest(guest)}
-                      className={`w-full px-4 py-3 text-left hover:bg-cream-100 transition-colors flex items-center justify-between gap-3 ${
-                        index === selectedIndex ? 'bg-cream-100' : ''
+                      className={`w-full px-4 py-3 text-left hover:bg-mint-100/55 transition-colors flex items-center justify-between gap-3 ${
+                        index === selectedIndex ? 'bg-mint-100/65' : ''
                       } ${index > 0 ? 'border-t border-border' : ''}`}
                     >
                       <div className="flex-1 min-w-0">
@@ -127,7 +128,7 @@ function HomePage() {
                     </button>
                   ))}
                 </div>
-                <div className="px-4 py-2 bg-cream-100 border-t border-border">
+                <div className="px-4 py-2 bg-rose-50/70 border-t border-border">
                   <p className="text-secondary text-xs text-center">
                     {searchResults.length} {searchResults.length === 1 ? 'result' : 'results'} found
                   </p>
@@ -146,7 +147,7 @@ function HomePage() {
                   ))}
                 </div>
               ) : (
-                <div className="bg-cream-100 rounded-2xl p-6 text-center border border-border shadow-soft">
+                <div className="bg-rose-50/70 rounded-2xl p-6 text-center border border-border shadow-soft">
                   <p className="text-secondary">
                     No guest found. Please check the spelling or ask the registration team.
                   </p>

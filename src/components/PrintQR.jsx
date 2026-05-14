@@ -29,7 +29,7 @@ const PrintQR = () => {
           Find your assigned table instantly
         </p>
 
-        <div className="bg-cream-50 p-6 rounded-2xl border border-border inline-block shadow-soft">
+        <div className="bg-mint-100/45 p-6 rounded-2xl border border-border inline-block shadow-soft">
           <QRCodeSVG
             value={baseUrl}
             size={280}

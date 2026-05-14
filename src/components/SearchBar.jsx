@@ -22,12 +22,12 @@ const SearchBar = ({ value, onChange, onClear, autoFocus, onKeyDown }) => {
           onChange={(e) => onChange(e.target.value)}
           onKeyDown={onKeyDown}
           autoFocus={autoFocus}
-          className="w-full pl-12 pr-12 py-4 bg-cream-50 border border-border rounded-2xl text-primary placeholder-secondary/70 text-base shadow-soft focus:border-secondary/50 focus:ring-2 focus:ring-cream-100 transition-all"
+          className="w-full pl-12 pr-12 py-4 bg-mint-100/45 border border-border rounded-2xl text-primary placeholder-secondary/70 text-base shadow-soft focus:border-sage-400 focus:ring-2 focus:ring-mint-200 transition-all"
         />
         {value && (
           <button
             onClick={onClear}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-6 h-6 bg-cream-100 hover:bg-cream-200 rounded-full border border-border flex items-center justify-center transition-colors"
+            className="absolute right-4 top-1/2 -translate-y-1/2 w-6 h-6 bg-rose-50 hover:bg-rose-100 rounded-full border border-border flex items-center justify-center transition-colors"
           >
             <svg className="w-3 h-3 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
