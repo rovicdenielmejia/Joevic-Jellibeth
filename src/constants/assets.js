@@ -1,1 +1,1 @@
-export const tableArrangementImage = '/Table-Arrangement.jpg'
+export const tableArrangementImage = '/Table-Arrangement.png'
