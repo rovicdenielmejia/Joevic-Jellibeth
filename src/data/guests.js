@@ -252,7 +252,7 @@ export const guests = [
   { id: 169, name: "CIRIACO VASQUEZ", table: "Table TWENTY-ONE", category: "Regular", notes: "" },
 
   // ============================================
-  // VIP TABLE 1 (6 guests)
+  // VIP TABLE 1 (7 guests)
   // ============================================
   { id: 170, name: "MR. ANDY TAGANIN", table: "VIP Table 1", category: "VIP", notes: "" },
   { id: 171, name: "MR. MARLOU ROXAS", table: "VIP Table 1", category: "VIP", notes: "" },
@@ -260,6 +260,7 @@ export const guests = [
   { id: 173, name: "MR. DANILO MAILEM", table: "VIP Table 1", category: "VIP", notes: "" },
   { id: 174, name: "MRS. VICKY UY", table: "VIP Table 1", category: "VIP", notes: "" },
   { id: 175, name: "MRS. TOMASA CARAG", table: "VIP Table 1", category: "VIP", notes: "" },
+  { id: 222, name: "TERESITA BAUTISTA", table: "VIP Table 1", category: "VIP", notes: "" },
 
   // ============================================
   // VIP TABLE 2 (6 guests)
